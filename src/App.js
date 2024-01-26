@@ -1,22 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 import perfume from './assets/media/perfume.png';
-import menu from './assets/media/menu.png'; 
+import menu from './assets/media/menu.png';
 import rose1 from './assets/media/rose1.png'
 function App() {
   return (
     <div className="App">
-      
-      <div className='navbar'>
+
+      <div className='navbar' >
         <div className='navbar-left'>
-          Arrivederciao
+
+          <a href="https://necatimertmetin.github.io" target="_blank">Arr<span>i</span>vederc<span>i</span>ao</a>
         </div>
         <div className='navbar-right'>
-          <img className='menu-icon' src={menu}/>
+          <img className='menu-icon' src={menu} />
         </div>
 
-      </div>
-      <img src={rose1} className='rose1'/>
+      </div >
+      <img src={rose1} className='rose1' />
       <div className='content-container'>
 
         <img className='perfume-img' src={perfume} />
@@ -27,18 +28,18 @@ function App() {
       </div>
 
       <div className='bottom-right-container'>
-      
+        <div className='bottom-line' />
         <div className='bottom-right-wrapper'>
           ethereal
         </div>
         <div className='bottom-right-wrapper'>
-         luscious
+          luscious
         </div>
         <div className='bottom-right-wrapper'>
           creamy
         </div>
       </div>
-
+      
     </div>
   );
 }

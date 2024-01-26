@@ -1,12 +1,24 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
 
 @font-face {
   font-family: elifinyenisi;
   src: url('/src/assets/fonts/RoashePersonalUse-jEa4M.otf');
 }
+@keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -.5em;
+    filter: blur(12px);
+    opacity: 0
+  }
 
-.navbar{
+  100% {
+    filter: blur(0);
+    opacity: 1
+  }
+}
+
+.navbar {
 
   display: flex;
   flex-direction: row;
@@ -17,21 +29,31 @@
 
 
   padding: 10px;
-  
+
 }
-.navbar-left{
+
+
+.navbar-left a {
+
+  text-decoration: none;
   font-size: 4vh;
   color: #640c2ca4;
   font-weight: 400;
   text-transform: uppercase;
-  
+  cursor: pointer;
+  line-height: 10px;
+  animation:tracking-in-contract 2s cubic-bezier(.215,.61,.355,1.000) both;
 }
-.navbar-right{
+
+.navbar-left a span {}
+
+.navbar-right {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.menu-icon{
+
+.menu-icon {
   height: 64px;
   width: 64px;
   object-position: center;
@@ -42,20 +64,24 @@
 }
 
 
+
+ 
 .App {
   /*position: relative;*/
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100vw;
-  background-image: url('/src/assets/media/pink-marble.jpg');
+  background-image: url('/src/assets/media/white-marble.jpg');
+  
   overflow: hidden;
 }
 
-.rose1, .rose2{
+.rose1 {
   position: absolute;
 }
-.rose1{
+
+.rose1 {
   right: 0;
   filter: drop-shadow(10px 10px 10px #888);
   height: 40vh;
@@ -68,20 +94,28 @@
   position: absolute;
   left: 50%;
   height: 70vh;
+  animation: dondurAbi 8s linear ;
 
+}
+@keyframes dondurAbi{
+  0%{
+  
+    transform: rotate(0deg);
+
+  }
+  100%{
+
+    transform: rotate(360deg);
+  }
 }
 
 .content-container {
   position: relative;
-  align-items: center;
   justify-content: center;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-
-
 }
 
 .content-wrapper {
@@ -90,6 +124,9 @@
   line-height: 13vh;
   filter: drop-shadow(0px 0px 5px #fff) drop-shadow(0px 0px 10px #fff);
   color: #FF77A9;
+  animation: focus-in-expand 3s cubic-bezier(.25, .46, .45, .94) alternate both;
+
+
 }
 
 
@@ -97,13 +134,16 @@
   font-size: 28vh;
   line-height: 28vh;
 }
+
 .content-wrapper:nth-child(2) {
   margin-left: 77vh;
 
 }
+
 .content-wrapper:nth-child(3) {
   margin-left: 21vh;
 }
+
 .content-wrapper:nth-child(4) {
   margin-left: 50vh;
 }
@@ -111,8 +151,8 @@
 
 
 
-.bottom-right-container{
-  
+.bottom-right-container {
+
   position: absolute;
   bottom: 0;
   right: 0;
@@ -123,9 +163,49 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  color: #2121219a;
+  color: #888;
+  border-left: 1px solid #888;
+  background: linear-gradient(0deg, #dfd8d8a8 0%,  rgba(253,45,45,0) 100%);
+  
 }
-.bottom-right-wrapper{
+
+.bottom-right-wrapper {
   font-family: 'Titillium Web' !important;
   font-weight: 200;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .App {
+    overflow-y: auto;
+  }
+
+  .rose1 {
+    display: none;
+  }
+
+  .perfume-img {
+    position: relative;
+    height: 40vh;
+    left: auto;
+  }
+
+  .content-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .content-title {
+    font-size: 5vw;
+    line-height: normal;
+  }
+
+  .content-wrapper {
+    margin: 0 !important;
+    font-size: 64px;
+    line-height: normal;
+  }
 }

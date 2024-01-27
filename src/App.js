@@ -10,7 +10,7 @@ function App() {
       <div className='navbar' >
         <div className='navbar-left'>
 
-          <a href="https://necatimertmetin.github.io" target="_blank">Arr<span>i</span>vederc<span>i</span>ao</a>
+          <a href="https://github.com/arrivederciao" target="_blank">Arr<span>i</span>vederc<span>i</span>ao</a>
         </div>
         <div className='navbar-right'>
           <img className='menu-icon' src={menu} />

@@ -24,10 +24,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-
-
-
   padding: 10px;
 
 }
@@ -45,7 +41,6 @@
   animation:tracking-in-contract 2s cubic-bezier(.215,.61,.355,1.000) both;
 }
 
-.navbar-left a span {}
 
 .navbar-right {
   display: flex;
@@ -88,13 +83,13 @@
   width: 40vh;
 }
 
-.navbar {}
+
 
 .perfume-img {
   position: absolute;
   left: 50%;
   height: 70vh;
-  animation: dondurAbi 8s linear ;
+  /*animation: dondurAbi 8s linear ;*/
 
 }
 @keyframes dondurAbi{

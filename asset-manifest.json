@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/onepage/static/css/main.e3ac25b6.css",
+    "main.js": "/onepage/static/js/main.fdbff7d6.js",
+    "static/js/787.26f401ef.chunk.js": "/onepage/static/js/787.26f401ef.chunk.js",
+    "static/media/white-marble.jpg": "/onepage/static/media/white-marble.139a17e938d47487f22b.jpg",
+    "static/media/rose1.png": "/onepage/static/media/rose1.43411ac8e59b5db407e6.png",
+    "static/media/perfume.png": "/onepage/static/media/perfume.c43442799076cf467d50.png",
+    "static/media/RoashePersonalUse-jEa4M.otf": "/onepage/static/media/RoashePersonalUse-jEa4M.706dd630fdd267e318ec.otf",
+    "static/media/logo.svg": "/onepage/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/onepage/index.html",
+    "main.e3ac25b6.css.map": "/onepage/static/css/main.e3ac25b6.css.map",
+    "main.fdbff7d6.js.map": "/onepage/static/js/main.fdbff7d6.js.map",
+    "787.26f401ef.chunk.js.map": "/onepage/static/js/787.26f401ef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3ac25b6.css",
+    "static/js/main.fdbff7d6.js"
+  ]
+}
